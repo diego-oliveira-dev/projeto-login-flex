@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0">
     <link rel="stylesheet" href="estilos/media-query.css">
     <link rel="stylesheet" href="estilos/style.css">
 </head>
@@ -15,17 +16,21 @@
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem vindo(a)! Faça login imediatamente!</p>
-                <form action="#" method="post">
+                <form action="#" method="post" autocomplete="on">
                     <div class="campo">
+                        <span class="material-symbols-outlined">
+                            person
+                            </span>
+                        <input type="email" name="login" id="ilogin" placeholder="Seu e-mail" required autocomplete="email" maxlength="30">
                         <label for="ilogin">Login</label>
-                        <input type="email" name="login" id="ilogin" placeholder="Login" required>
                     </div>
                     <div class="campo">
+                        <span class="material-symbols-outlined">vpn_key</span>
+                        <input type="password" name="senha" id="isenha" placeholder="Sua senha" required autocomplete="current-password" minlength="8">
                         <label for="isenha">Senha</label>
-                        <input type="password" name="senha" id="isenha" placeholder="Senha" required>
                     </div>
                     <input type="submit" value="Entrar">
-                    <button>Esqueci a senha</button>
+                    <a href="#">Esqueci a senha</a>
                 </form>
                 <footer>
                     Projeto desenvoldido por <a href="#">Dinego</a>
