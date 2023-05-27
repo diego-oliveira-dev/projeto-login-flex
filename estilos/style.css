@@ -15,12 +15,38 @@
 }
 
 body, html {
+    background-color: #081C1B;
     width: 100vw;
     height: 100vh;
 }
 
 main {
-    background-color: #081C1B;
     height: 100vh;
     width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#login {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 250px;
+    height: 80vh;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.467);
+}
+
+section#login > div#imagem {
+    display: block;
+    background: black url(../imagens/pexels-oleksandr-tiupa-192136\ \(1\).jpg) no-repeat;
+    background-size: auto;
+    background-position: center center;
+    height: 40%;
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
 }
